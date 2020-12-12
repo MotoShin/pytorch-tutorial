@@ -5,6 +5,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
+import time
 
 
 class Net(nn.Module):
@@ -127,4 +128,7 @@ def main():
         torch.save(model.state_dict(), "mnist_cnn.pt")
 
 if __name__=='__main__':
+    start = time.time()
     main()
+    elapsed_time = time.time() - start
+    print('elapsed_time:{}'.format(elapsed_time) + '[sec]')
