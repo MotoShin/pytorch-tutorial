@@ -134,3 +134,4 @@ dmypy.json
 # data set
 Deep_Learning_with_PyTorch/traning_a_classifier/data/
 Deep_Learning_with_PyTorch/traning_a_classifier/cifar_net.pth
+data/
